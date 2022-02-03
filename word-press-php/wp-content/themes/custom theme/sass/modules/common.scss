@@ -1,0 +1,382 @@
+/*****common****/
+.menu,
+#footer-bottom {
+     background-color: #2F2A2A;
+     color:white;
+}
+
+.menu,
+.social-icons {
+    list-style-type: none;
+    overflow: hidden;
+    position: -webkit-sticky;
+    position: sticky;
+	top: 0;
+	margin-bottom: 0;
+	padding-left:0;
+    li {
+        float: left;
+
+        a {
+            display: block;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            color: white;
+
+            &:hover {
+                opacity: 0.5;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+body {
+    text-align: left;
+    background-color: #CDCDCD;
+    //background-image: url("http://localhost/myproject/wp-content/uploads/2020/08/Sophmore-Mag.png");
+    font-family: 'Courier Prime', monospace;
+    .parallax {
+ 
+    }
+	a {
+		&:hover {
+			// opacity: 0.5;
+			text-decoration: none;
+		}
+	}
+    .container {
+        background-color: #68C3C2;
+
+        #ttr_main {
+            margin-top: 20px;
+            #ttr_content {
+                .wp-block-gallery {
+                    display: none;
+                }
+            }
+        }
+        .single-page-section, .single-post-section {
+            margin-bottom: 20px;
+            .blocks-gallery-grid {
+                list-style-type: none;
+                text-align: center;
+            }
+        }
+        .main-header {
+            margin-bottom: 20px;
+        }
+        .main-header,
+        .page-header,
+        .blog-header,
+        .footer-header,
+        .blog-category-header {
+            display: inline-block;
+            font-size: 30;
+            padding-bottom: 10px;
+            background-image: linear-gradient(to right, #F16A70, #efbe29);
+            background-position: bottom left;
+            background-repeat: no-repeat;
+            background-size: 50% 3px;
+            transition: background-size .5s ease;
+            text-align: center;
+        }
+       
+        .main-header:hover,
+        .page-header:hover,
+        .blog-header:hover,
+        .footer-header:hover,
+        .blog-category-header:hover {
+            background-size: 100% 3px;
+        }
+        .blog-category-header {
+            font-size:22px!important;
+            margin-left: 20px;
+            // font-family: 'Medula One', cursive;
+         }
+        .page-header {
+            margin-bottom: 20px;
+        }
+        
+        #ttr_header {
+            .custom-menu-class {
+                width: 100%;
+			}
+			// margin-bottom: 20px;
+        }
+		#ttr_sidebar {
+			border-left: 1px solid black;
+			.sidebar-recent-blog {
+				background-color: #CCBC67;
+				/* opacity: 0.5; */
+				margin-bottom: 0;
+				border: 1px solid #CDCDCD;
+				padding: 10px;
+				.featured-img-cover {
+					width:50px;
+					height:60px;
+					display: inline-block;
+					img {
+						max-width: 100%;
+						max-height: 100%;
+						display: block; 
+					}
+				}
+				.sidebar-blog-info {
+			    width: calc(100% - 60px);
+			    float: right;
+			    white-space: nowrap;
+			    overflow: hidden;
+			    text-overflow: ellipsis;
+			    word-break: break-all;
+			}
+			}
+
+		}
+		
+        .easy-post-link {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            border: 1px dotted #CF8E5D;
+        }
+
+        .featured-img-cover {
+            text-align: center;
+        }
+
+        .single-detail-post {
+            .featured-img-cover {
+                margin-bottom: 30px;
+            }
+        }
+
+        .blog-section {
+            margin: 20px;
+        
+            a {
+                text-decoration: none;
+                color: black;
+            }
+
+            @media only screen and (max-width: 570px) {
+                .each-blog {
+                    margin-bottom: 20px;
+                }
+            }
+
+            .each-blog {
+				margin-right:10px;
+				border : 1px solid #CDCDCD;
+				max-width: 32.333333%;
+				padding: 20px;
+                .post-content-cover {
+					margin-bottom: 20px;
+                    p {
+						margin: 0;
+					}
+					p:nth-child(3){
+						white-space: nowrap;
+    					width: 50px;
+    					overflow: hidden;
+   						text-overflow: ellipsis;
+    					word-break: break-all;
+					}
+                }
+            }
+			.each-blog:nth-child(3n) {
+				margin-right: 0 !important;
+			}
+			.each-blog-heading {
+				.featured-img-cover {
+					margin-bottom: 20px;
+				}
+				.post-content-cover{
+					margin-bottom:0;
+				}
+			}
+            .main-blog-heading:hover {
+                opacity: 0.5;
+                text-decoration: none;
+            }
+
+            p {
+                word-break: break-all;
+                max-height: 50px;
+                overflow: hidden;
+                // text-overflow: ellipsis !important;
+                // white-space: nowrap;
+                // width: 200px;
+            }
+
+            .see-more {
+                border-radius: 4px;
+                padding: 4px 4px;
+			}
+
+            .each-featured-blog {
+                margin-right: 10px;
+                max-width: 32.7%;
+                border: 1px solid #7E685A;
+                padding: 20px;
+
+                .featured-img-cover {
+                    width: 15vw;
+                    margin: 0 auto 20px;
+                    text-align: center;
+                    height: 15vw;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+                .wp-block-gallery {
+                    display: none;
+                }
+			}
+			.each-detail-blog {
+				margin-bottom: 20px;
+				.post-content-cover {
+					margin-bottom: 20px;;
+				}
+			}
+			.each-detail-blog:nth-child(3n) {
+				margin-right: 0 !important;
+			}
+
+            .each-featured-blog:nth-last-child(1) {
+                margin-right: 0 !important;
+            }
+
+        }
+
+        #ttr_footer {
+            width: 100%;
+            border-top: 1px #ecfcfe solid;
+            margin-top: 30px;
+            margin-bottom: 30px;
+
+            .footer-header {
+                margin-top: 15px;
+            }
+
+            .wpcf7-submit {
+                background-color: black;
+                color: white;
+                border: 2px solid black;
+                ;
+                width: 80%;
+                height: 7%;
+            }
+
+            .wpcf7 {
+                width: 50%;
+
+                label {
+                    width: 80%;
+                }
+            }
+
+            .wpcf7-submit:hover {
+                background-color: #CCBC67;
+                color: black;
+                border: 2px solid white;
+            }
+
+            .wpcf7-email {
+                width: 100%;
+                height: 7%;
+            }
+        }
+    }
+
+}
+
+
+.button {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    padding: 15px 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button5,
+.see-more {
+    &:hover {
+        background-color: #CCBC67;
+        color: black;
+        border: 2px solid white;
+    }
+}
+
+.blog-section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.blog-seemore {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.post-archive {
+    margin-bottom: 20px;
+}
+
+#page-tittle {
+    background-color: #CCBC67;
+    padding: 20px 2px 20px 20px;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#footer-bottom {
+    #footer-info {
+        padding: 20px;
+        width: 100%;
+        text-align: right;
+    }
+}
+
+iframe {
+    border: 0;
+}
+
+@media only screen and (max-width: 1240px) and (min-width: 500px) {
+    img {
+        width: 100px !important;
+        height: 168px !important;
+    }
+}
+.wp-pagenavi {
+	clear: both;
+}
+.screen-reader-response {
+    display: none;
+}
+
+.wp-pagenavi a, .wp-pagenavi span {
+	text-decoration: none;
+	border: 1px solid #000;
+	padding: 3px 5px;
+	margin: 2px;
+}
+
+.wp-pagenavi a:hover, .wp-pagenavi span.current {
+	border-color: #000;
+}
+
+.wp-pagenavi span.current {
+	font-weight: bold;
+}

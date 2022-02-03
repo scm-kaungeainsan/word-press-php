@@ -1,0 +1,264 @@
+/*****common****/
+.menu,
+#footer-bottom {
+  background-color: #2F2A2A;
+  color: white; }
+
+.menu,
+.social-icons {
+  list-style-type: none;
+  overflow: hidden;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  margin-bottom: 0;
+  padding-left: 0; }
+  .menu li,
+  .social-icons li {
+    float: left; }
+    .menu li a,
+    .social-icons li a {
+      display: block;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      color: white; }
+      .menu li a:hover,
+      .social-icons li a:hover {
+        opacity: 0.5;
+        text-decoration: none; }
+
+body {
+  text-align: left;
+  background-color: #CDCDCD;
+  font-family: 'Courier Prime', monospace; }
+  body a:hover {
+    text-decoration: none; }
+  body .container {
+    background-color: #68C3C2; }
+    body .container #ttr_main {
+      margin-top: 20px; }
+      body .container #ttr_main #ttr_content .wp-block-gallery {
+        display: none; }
+    body .container .single-page-section, body .container .single-post-section {
+      margin-bottom: 20px; }
+      body .container .single-page-section .blocks-gallery-grid, body .container .single-post-section .blocks-gallery-grid {
+        list-style-type: none;
+        text-align: center; }
+    body .container .main-header {
+      margin-bottom: 20px; }
+    body .container .main-header,
+    body .container .page-header,
+    body .container .blog-header,
+    body .container .footer-header,
+    body .container .blog-category-header {
+      display: inline-block;
+      font-size: 30;
+      padding-bottom: 10px;
+      background-image: linear-gradient(to right, #F16A70, #efbe29);
+      background-position: bottom left;
+      background-repeat: no-repeat;
+      background-size: 50% 3px;
+      transition: background-size .5s ease;
+      text-align: center; }
+    body .container .main-header:hover,
+    body .container .page-header:hover,
+    body .container .blog-header:hover,
+    body .container .footer-header:hover,
+    body .container .blog-category-header:hover {
+      background-size: 100% 3px; }
+    body .container .blog-category-header {
+      font-size: 22px !important;
+      margin-left: 20px; }
+    body .container .page-header {
+      margin-bottom: 20px; }
+    body .container #ttr_header .custom-menu-class {
+      width: 100%; }
+    body .container #ttr_sidebar {
+      border-left: 1px solid black; }
+      body .container #ttr_sidebar .sidebar-recent-blog {
+        background-color: #CCBC67;
+        /* opacity: 0.5; */
+        margin-bottom: 0;
+        border: 1px solid #CDCDCD;
+        padding: 10px; }
+        body .container #ttr_sidebar .sidebar-recent-blog .featured-img-cover {
+          width: 50px;
+          height: 60px;
+          display: inline-block; }
+          body .container #ttr_sidebar .sidebar-recent-blog .featured-img-cover img {
+            max-width: 100%;
+            max-height: 100%;
+            display: block; }
+        body .container #ttr_sidebar .sidebar-recent-blog .sidebar-blog-info {
+          width: calc(100% - 60px);
+          float: right;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          word-break: break-all; }
+    body .container .easy-post-link {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      border: 1px dotted #CF8E5D; }
+    body .container .featured-img-cover {
+      text-align: center; }
+    body .container .single-detail-post .featured-img-cover {
+      margin-bottom: 30px; }
+    body .container .blog-section {
+      margin: 20px; }
+      body .container .blog-section a {
+        text-decoration: none;
+        color: black; }
+      @media only screen and (max-width: 570px) {
+        body .container .blog-section .each-blog {
+          margin-bottom: 20px; } }
+      body .container .blog-section .each-blog {
+        margin-right: 10px;
+        border: 1px solid #CDCDCD;
+        max-width: 32.333333%;
+        padding: 20px; }
+        body .container .blog-section .each-blog .post-content-cover {
+          margin-bottom: 20px; }
+          body .container .blog-section .each-blog .post-content-cover p {
+            margin: 0; }
+          body .container .blog-section .each-blog .post-content-cover p:nth-child(3) {
+            white-space: nowrap;
+            width: 50px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            word-break: break-all; }
+      body .container .blog-section .each-blog:nth-child(3n) {
+        margin-right: 0 !important; }
+      body .container .blog-section .each-blog-heading .featured-img-cover {
+        margin-bottom: 20px; }
+      body .container .blog-section .each-blog-heading .post-content-cover {
+        margin-bottom: 0; }
+      body .container .blog-section .main-blog-heading:hover {
+        opacity: 0.5;
+        text-decoration: none; }
+      body .container .blog-section p {
+        word-break: break-all;
+        max-height: 50px;
+        overflow: hidden; }
+      body .container .blog-section .see-more {
+        border-radius: 4px;
+        padding: 4px 4px; }
+      body .container .blog-section .each-featured-blog {
+        margin-right: 10px;
+        max-width: 32.7%;
+        border: 1px solid #7E685A;
+        padding: 20px; }
+        body .container .blog-section .each-featured-blog .featured-img-cover {
+          width: 15vw;
+          margin: 0 auto 20px;
+          text-align: center;
+          height: 15vw; }
+          body .container .blog-section .each-featured-blog .featured-img-cover img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; }
+        body .container .blog-section .each-featured-blog .wp-block-gallery {
+          display: none; }
+      body .container .blog-section .each-detail-blog {
+        margin-bottom: 20px; }
+        body .container .blog-section .each-detail-blog .post-content-cover {
+          margin-bottom: 20px; }
+      body .container .blog-section .each-detail-blog:nth-child(3n) {
+        margin-right: 0 !important; }
+      body .container .blog-section .each-featured-blog:nth-last-child(1) {
+        margin-right: 0 !important; }
+    body .container #ttr_footer {
+      width: 100%;
+      border-top: 1px #ecfcfe solid;
+      margin-top: 30px;
+      margin-bottom: 30px; }
+      body .container #ttr_footer .footer-header {
+        margin-top: 15px; }
+      body .container #ttr_footer .wpcf7-submit {
+        background-color: black;
+        color: white;
+        border: 2px solid black;
+        width: 80%;
+        height: 7%; }
+      body .container #ttr_footer .wpcf7 {
+        width: 50%; }
+        body .container #ttr_footer .wpcf7 label {
+          width: 80%; }
+      body .container #ttr_footer .wpcf7-submit:hover {
+        background-color: #CCBC67;
+        color: black;
+        border: 2px solid white; }
+      body .container #ttr_footer .wpcf7-email {
+        width: 100%;
+        height: 7%; }
+
+.button {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  padding: 15px 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer; }
+
+.button5:hover,
+.see-more:hover {
+  background-color: #CCBC67;
+  color: black;
+  border: 2px solid white; }
+
+.blog-section {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.blog-seemore {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px; }
+
+.post-archive {
+  margin-bottom: 20px; }
+
+#page-tittle {
+  background-color: #CCBC67;
+  padding: 20px 2px 20px 20px;
+  text-align: center;
+  color: white;
+  margin-bottom: 20px; }
+
+#footer-bottom #footer-info {
+  padding: 20px;
+  width: 100%;
+  text-align: right; }
+
+iframe {
+  border: 0; }
+
+@media only screen and (max-width: 1240px) and (min-width: 500px) {
+  img {
+    width: 100px !important;
+    height: 168px !important; } }
+.wp-pagenavi {
+  clear: both; }
+
+.screen-reader-response {
+  display: none; }
+
+.wp-pagenavi a, .wp-pagenavi span {
+  text-decoration: none;
+  border: 1px solid #000;
+  padding: 3px 5px;
+  margin: 2px; }
+
+.wp-pagenavi a:hover, .wp-pagenavi span.current {
+  border-color: #000; }
+
+.wp-pagenavi span.current {
+  font-weight: bold; }
+
+/*# sourceMappingURL=style.css.map */
